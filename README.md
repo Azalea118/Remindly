@@ -58,9 +58,9 @@ ___________________________________
 
 |    Screen      |    Preview 
 |--------------- |---------
-| **login-In**    | ![](pictures/signin.png) 
+| **login-In**    | ![](pictures/login.png) 
 
-| **Sign-Up**    | ![](pictures/signup.png)
+| **Sign-Up**    | ![](pictures/signin.png)
 
 | **ForgotPass** | ![](pictures/forgotPass.png)
 
