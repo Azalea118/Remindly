@@ -58,9 +58,12 @@ ___________________________________
 
 |    Screen      |    Preview 
 |--------------- |---------
-| **Sign-In**    | ![](pictures/signin.png) 
+| **login-In**    | ![](pictures/signin.png) 
+
 | **Sign-Up**    | ![](pictures/signup.png)
+
 | **ForgotPass** | ![](pictures/forgotPass.png)
+
 ___________________________________
 
 ## How to Run the App
