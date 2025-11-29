@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7F5E9"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Top App Bar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A8D5A0"
+            app:navigationIcon="@drawable/menu"
+            app:title="Remindly"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text"
+            app:menu="@menu/profile_menu" />
+
+        <!-- Profile Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Profile"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:textColor="@color/text"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:icon="@drawable/edit"
+                app:iconTint="@color/white"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/boton"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                style="@style/Widget.Material3.Button.ElevatedButton"/>
+        </LinearLayout>
+
+        <!-- Profile Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="wrap_content">
+
+                <!-- Avatar -->
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/person"
+                    android:background="@drawable/circle_bg"
+                    android:padding="20dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Name -->
+                <TextView
+                    android:text="Full Name"
+                    android:textSize="12sp"
+                    android:textColor="#777777"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:text="meow"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- Email -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/email" />
+
+                    <TextView
+                        android:text="Email"
+                        android:textSize="16sp"
+                        android:textColor="@color/text"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:text="cjbologa18@gmail.com"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- Phone -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:src="@drawable/phone"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:text="Phone"
+                        android:textSize="16sp"
+                        android:textColor="@color/text"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:text="09936147132"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Bottom options -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp">
+
+            <!-- Rate Us -->
+            <LinearLayout
+                android:padding="16dp"
+                android:id="@+id/rate_us"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:src="@drawable/star"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="@color/yellow" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Rate Us"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Give us your feedback"
+                        android:textColor="#777777"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- App Not Working -->
+            <LinearLayout
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/report_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:src="@drawable/report"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="#FF7F7F" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="App Not Working"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Report an issue"
+                        android:textColor="#777777"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Share App -->
+            <LinearLayout
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:id="@+id/share_app"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:src="@drawable/share"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="#ADD8E6" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Share App"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Tell your friends"
+                        android:textColor="#777777"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/log_out"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:src="@drawable/logout"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:tint="#FF474C" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Log Out"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Sign out of your account"
+                        android:textColor="#777777"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Floating Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="24dp"
+            app:srcCompat="@drawable/add"
+            app:tint="@android:color/white"
+            android:backgroundTint="#6CC96C"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

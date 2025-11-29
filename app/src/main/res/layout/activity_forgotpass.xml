@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/ForgotPassLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+
+
+    android:background="@color/begi"
+    tools:context=".forgotpassword">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:clickable="true"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:tint="@color/text" />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:id="@+id/send"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/send"
+        app:tint="@color/text" />
+
+
+    </LinearLayout>
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/FUsernameL"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FUsernameE"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:drawableTint="@color/text"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="5dp"
+
+                    android:hint="Enter your email" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

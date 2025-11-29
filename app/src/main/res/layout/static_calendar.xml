@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="12dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <!-- Month Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/baseline_arrow_back_ios_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="November 2025"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginHorizontal="25dp"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/send"/>
+            </LinearLayout>
+
+            <!-- Weekday Labels -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:weightSum="7"
+                android:orientation="horizontal">
+
+                <TextView android:text="Sun" style="@style/CalendarDayLabel"/>
+                <TextView android:text="Mon" style="@style/CalendarDayLabel"/>
+                <TextView android:text="Tue" style="@style/CalendarDayLabel"/>
+                <TextView android:text="Wed" style="@style/CalendarDayLabel"/>
+                <TextView android:text="Thu" style="@style/CalendarDayLabel"/>
+                <TextView android:text="Fri" style="@style/CalendarDayLabel"/>
+                <TextView android:text="Sat" style="@style/CalendarDayLabel"/>
+
+            </LinearLayout>
+
+            <!-- Row 1 -->
+            <LinearLayout style="@style/CalendarRow">
+                <TextView style="@style/CalendarEmpty"/>
+                <TextView style="@style/CalendarEmpty"/>
+                <TextView style="@style/CalendarEmpty"/>
+                <TextView style="@style/CalendarEmpty"/>
+                <TextView style="@style/CalendarDay" android:text="1"/>
+                <TextView style="@style/CalendarDay" android:text="2"/>
+                <TextView style="@style/CalendarDay" android:text="3"/>
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout style="@style/CalendarRow">
+                <TextView style="@style/CalendarDay" android:text="4"/>
+                <TextView style="@style/CalendarDay" android:text="5"/>
+                <TextView style="@style/CalendarDay" android:text="6"/>
+                <TextView style="@style/CalendarDay" android:text="7"/>
+                <TextView style="@style/CalendarDay" android:text="8"/>
+                <TextView style="@style/CalendarDay" android:text="9"/>
+                <TextView style="@style/CalendarDay" android:text="10"/>
+            </LinearLayout>
+
+            <!-- Row 3 -->
+            <LinearLayout style="@style/CalendarRow">
+                <TextView style="@style/CalendarDay" android:text="11"/>
+                <TextView style="@style/CalendarDay" android:text="12"/>
+                <TextView style="@style/CalendarDay" android:text="13"/>
+                <TextView style="@style/CalendarDay" android:text="14"/>
+                <TextView style="@style/CalendarDay" android:text="15"/>
+                <TextView style="@style/CalendarDay" android:text="16"/>
+                <TextView style="@style/CalendarDay" android:text="17"/>
+            </LinearLayout>
+
+            <!-- Row 4 -->
+            <LinearLayout style="@style/CalendarRow">
+                <TextView style="@style/CalendarDay" android:text="18"/>
+                <TextView style="@style/CalendarDay" android:text="19"/>
+                <TextView style="@style/CalendarDay" android:text="20"/>
+                <TextView style="@style/CalendarDay" android:text="21"/>
+                <TextView style="@style/CalendarDay" android:text="22"/>
+                <TextView style="@style/CalendarDay" android:text="23"/>
+                <TextView style="@style/CalendarDay" android:text="24"/>
+            </LinearLayout>
+
+            <!-- Row 5 -->
+            <LinearLayout style="@style/CalendarRow">
+                <TextView style="@style/CalendarDay" android:text="25"/>
+                <TextView style="@style/CalendarDay" android:text="26"/>
+                <TextView style="@style/CalendarDay" android:text="27"/>
+                <TextView style="@style/CalendarDay" android:text="28"/>
+
+                <!-- Green highlighted 29 -->
+                <TextView
+                    style="@style/CalendarDay"
+                    android:text="29"
+                    android:background="@drawable/calendar_green_circle"
+                    android:textColor="@android:color/white"/>
+
+                <TextView style="@style/CalendarDay" android:text="30"/>
+                <TextView style="@style/CalendarEmpty"/>
+            </LinearLayout>
+
+            <!-- Legend -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="#53C46B"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="16dp"/>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="#F9C5C5"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bills Due"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

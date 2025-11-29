@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1018100524586",
+    "firebase_url": "https://remindlydatabase-default-rtdb.firebaseio.com",
+    "project_id": "remindlydatabase",
+    "storage_bucket": "remindlydatabase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018100524586:android:9883a9d343cdd8692bc553",
+        "android_client_info": {
+          "package_name": "com.example.remindly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKX_6owvzwBboWVGfW-gndZKtJDJnIcTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018100524586:android:79c3e29392aa931a2bc553",
+        "android_client_info": {
+          "package_name": "com.example.remindlyv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKX_6owvzwBboWVGfW-gndZKtJDJnIcTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

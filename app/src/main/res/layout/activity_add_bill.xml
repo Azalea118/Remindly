@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add New Bill"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"/>
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/close"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <!-- BILL NAME LABEL -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Name"
+        android:textSize="16sp"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- BILL NAME INPUT -->
+    <EditText
+        android:id="@+id/billName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/gains"
+        android:hint="e.g., Electric Bill"
+        android:padding="14dp"
+        android:textSize="16sp"/>
+
+    <!-- AMOUNT LABEL -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount (₱)"
+        android:textSize="16sp"
+        android:textColor="#2E7D32"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- AMOUNT INPUT -->
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/gains"
+        android:hint="0.00"
+        android:inputType="numberDecimal"
+        android:padding="14dp"
+        android:textSize="16sp"/>
+
+    <!-- DUE DATE LABEL -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:textSize="16sp"
+        android:textColor="#2E7D32"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- SPINNER -->
+    <Spinner
+        android:id="@+id/dueDateSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/gains"
+        android:padding="12dp" />
+
+    <!-- RECEIPT LABEL -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receipt Photo (Optional)"
+        android:textSize="16sp"
+        android:textColor="#2E7D32"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- UPLOAD BOX -->
+    <LinearLayout
+        android:id="@+id/uploadBox"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:background="@color/gains"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/camera"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to upload receipt"
+            android:textColor="#2E7D32"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PNG, JPG up to 5MB"
+            android:textSize="13sp"
+            android:textColor="#8A8A8A" />
+    </LinearLayout>
+
+    <!-- BUTTONS ROW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <!-- ADD BILL BUTTON -->
+        <Button
+            android:id="@+id/addBillBtn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Add Bill"
+            android:textSize="16sp"
+            android:backgroundTint="@color/text"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:backgroundTint="@color/boton"
+            android:textColor="#2E7D32"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Remindlyv2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOutline">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="colorOnSurfaceVariant">@color/black</item>
+        <item name="colorSecondary">@color/black</item>
+    </style>
+
+    <style name="Theme.Remindlyv2" parent="Base.Theme.Remindlyv2" />
+</resources>

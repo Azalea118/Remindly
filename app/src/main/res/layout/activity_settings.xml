@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDEED9">
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#A8D5A3"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Menu Icon -->
+        <ImageView
+            android:id="@+id/menuBtn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/menu"
+            android:tint="#2E2E2E" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remindly"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#2E2E2E" />
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/profileBtn"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:src="@drawable/person"
+            android:tint="#2E2E2E" />
+    </LinearLayout>
+
+    <!-- SETTINGS TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="22dp"
+        android:textColor="#2E2E2E" />
+
+    <!-- SETTINGS CARD -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Currency Symbol -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$  Currency Symbol"
+                android:textSize="15sp"
+                android:textColor="#2E2E2E" />
+
+            <Spinner
+                android:id="@+id/currencySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/boton"
+                android:entries="@array/currency_list"
+                android:layout_marginTop="10dp" />
+
+
+            <!-- Notifications Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/notification"
+                    android:tint="#2E2E2E" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enable Notifications"
+                    android:textSize="15sp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="#2E2E2E" />
+
+                <Switch
+                    android:id="@+id/notificationSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get reminded about upcoming bills"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#737373" />
+
+            <!-- Reminder Days -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/calendar"
+                    android:tint="#2E2E2E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder Days Before Due"
+                    android:textSize="15sp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="#2E2E2E" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/daysSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/daysValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3 days"
+                android:textSize="13sp"
+                android:textColor="#2E2E2E" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Bills due within this period will be highlighted"
+                android:textSize="12sp"
+                android:textColor="#737373" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ABOUT CARD -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="About"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#2E2E2E" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Bill Reminder App v1.0"
+                android:textSize="14sp"
+                android:textColor="#2E2E2E" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Keep track of your bills and never miss a payment!"
+                android:textSize="12sp"
+                android:textColor="#737373" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Floating Button -->
+    <ImageView
+        android:id="@+id/addBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/add"
+        android:background="@drawable/dot_green"
+        android:padding="12dp"
+        android:layout_gravity="end"
+        android:elevation="6dp" />
+
+</LinearLayout>
