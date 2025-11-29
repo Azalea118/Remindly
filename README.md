@@ -100,10 +100,10 @@ You can now explore the full prototype:
 - Error Validations
 - Success / Welcome Screen
 ## Documentations
-![](pictures/start.png)
-![](pictures/end.png)
-![](pictures/joe-start.png)
-![](pictures/joe-end.png)
-![](pictures/karol-start.png)
-![](pictures/karol-end.png)
+![](pictures/start.jpg)
+![](pictures/end.jpg)
+![](pictures/joe-start.jpg)
+![](pictures/joe-end.jpg)
+![](pictures/karol-start.jpg)
+![](pictures/karol-end.jpg)
 
