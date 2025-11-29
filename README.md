@@ -56,13 +56,11 @@ ___________________________________
 
 ## Screenshots
 
-|    Screen      |    Preview 
-|--------------- |---------
-| **login-In**    | ![](pictures/login.png) 
-
-| **Sign-Up**    | ![](pictures/signin.png)
-
-| **ForgotPass** | ![](pictures/forgotPass.png)
+| Screen        | Preview |
+|-------------- |---------|
+| **Login-In**   | ![](pictures/login.png) |
+| **Sign-Up**    | ![](pictures/signin.png) |
+| **ForgotPass** | ![](pictures/forgotPass.png) |
 
 ___________________________________
 
