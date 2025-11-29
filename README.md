@@ -8,9 +8,13 @@ ____________________________________________________________________________
 
 ## Team Mothy — Members & Roles
 | **Joshua Aquino**            | UI/UX Designer 
+
 | **Carl Jazzel Bologa**       | Lead Developer 
+
 | **Timothy Ceballos**         | Project Manager 
+
 | **Paul Ello**                | Product Manager 
+
 | **Angelo Vens Recopelacion** | Logistics & Assistant UI/UX 
 _____________________________________________________________________________
 
